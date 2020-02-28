@@ -1,3 +1,6 @@
+Microsoft Windows [Version 10.0.16299.1686]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
 C:\Users\Documents\SpringCloud>java -jar spring-cloud-dataflow-shell-2.5.0.BUILD-20200228.034106-40.jar
   ____                              ____ _                __
  / ___| _ __  _ __(_)_ __   __ _   / ___| | ___  _   _  __| |
@@ -24,13 +27,6 @@ dataflow:>stream create --name log-data --definition 'product-service | discount
 Created new stream 'log-data'
 dataflow:>stream deploy --name log-data
 Deployment request has been sent for stream 'log-data'
-dataflow:>stream list
-╔═══════════╤═══════════╤════════════════════════════════════════════════════╤═════════════════════════════╗
-║Stream Name│Description│                 Stream Definition                  │           Status            ║
-╠═══════════╪═══════════╪════════════════════════════════════════════════════╪═════════════════════════════╣
-║log-data   │           │product-service | discount-service | courier-service│The stream is being deployed.║
-╚═══════════╧═══════════╧════════════════════════════════════════════════════╧═════════════════════════════╝
-
 dataflow:>stream list
 ╔═══════════╤═══════════╤════════════════════════════════════════════════════╤═════════════════════════════╗
 ║Stream Name│Description│                 Stream Definition                  │           Status            ║
