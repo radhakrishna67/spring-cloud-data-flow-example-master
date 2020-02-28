@@ -1,0 +1,41 @@
+C:\Users\Documents\SpringCloud>java -jar spring-cloud-dataflow-shell-2.5.0.BUILD-20200228.034106-40.jar
+  ____                              ____ _                __
+ / ___| _ __  _ __(_)_ __   __ _   / ___| | ___  _   _  __| |
+ \___ \| '_ \| '__| | '_ \ / _` | | |   | |/ _ \| | | |/ _` |
+  ___) | |_) | |  | | | | | (_| | | |___| | (_) | |_| | (_| |
+ |____/| .__/|_|  |_|_| |_|\__, |  \____|_|\___/ \__,_|\__,_|
+  ____ |_|    _          __|___/                 __________
+ |  _ \  __ _| |_ __ _  |  ___| | _____      __  \ \ \ \ \ \
+ | | | |/ _` | __/ _` | | |_  | |/ _ \ \ /\ / /   \ \ \ \ \ \
+ | |_| | (_| | || (_| | |  _| | | (_) \ V  V /    / / / / / /
+ |____/ \__,_|\__\__,_| |_|   |_|\___/ \_/\_/    /_/_/_/_/_/
+
+2.5.0.BUILD-SNAPSHOT
+
+Welcome to the Spring Cloud Data Flow shell. For assistance hit TAB or type "help".
+Successfully targeted http://localhost:9393/
+dataflow:>app register --name product-service --type source --uri maven://com.javatechie:product-service:jar:0.0.1-SNAPSHOT
+Successfully registered application 'source:product-service'
+dataflow:>app register --name discount-service --type processor --uri maven://com.javatechie:discount-service:jar:0.0.1-SNAPSHOT
+Successfully registered application 'processor:discount-service'
+dataflow:>app register --name courier-service --type sink --uri maven://com.javatechie:courier-service:jar:0.0.1-SNAPSHOT
+Successfully registered application 'sink:courier-service'
+dataflow:>stream create --name log-data --definition 'product-service | discount-service | courier-service'
+Created new stream 'log-data'
+dataflow:>stream deploy --name log-data
+Deployment request has been sent for stream 'log-data'
+dataflow:>stream list
+╔═══════════╤═══════════╤════════════════════════════════════════════════════╤═════════════════════════════╗
+║Stream Name│Description│                 Stream Definition                  │           Status            ║
+╠═══════════╪═══════════╪════════════════════════════════════════════════════╪═════════════════════════════╣
+║log-data   │           │product-service | discount-service | courier-service│The stream is being deployed.║
+╚═══════════╧═══════════╧════════════════════════════════════════════════════╧═════════════════════════════╝
+
+dataflow:>stream list
+╔═══════════╤═══════════╤════════════════════════════════════════════════════╤═════════════════════════════╗
+║Stream Name│Description│                 Stream Definition                  │           Status            ║
+╠═══════════╪═══════════╪════════════════════════════════════════════════════╪═════════════════════════════╣
+║log-data   │           │product-service | discount-service | courier-service│The stream is being deployed.║
+╚═══════════╧═══════════╧════════════════════════════════════════════════════╧═════════════════════════════╝
+
+dataflow:>

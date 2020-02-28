@@ -1,0 +1,144 @@
+C:\Users\balineni>cd C:\Users\Documents\SpringCloud
+
+C:\Users\Documents\SpringCloud>java -jar spring-cloud-dataflow-server-2.5.0.BUILD-20200228.034106-40.jar
+2020-02-28 11:15:51.975  INFO 11384 --- [           main] o.s.c.d.a.l.ProfileApplicationListener   : Setting property 'spring.cloud.kubernetes.enabled' to false.
+2020-02-28 11:15:54.147  INFO 11384 --- [           main] o.s.c.d.a.l.ProfileApplicationListener   : Setting property 'spring.cloud.kubernetes.enabled' to false.
+  ____                              ____ _                __
+ / ___| _ __  _ __(_)_ __   __ _   / ___| | ___  _   _  __| |
+ \___ \| '_ \| '__| | '_ \ / _` | | |   | |/ _ \| | | |/ _` |
+  ___) | |_) | |  | | | | | (_| | | |___| | (_) | |_| | (_| |
+ |____/| .__/|_|  |_|_| |_|\__, |  \____|_|\___/ \__,_|\__,_|
+  ____ |_|    _          __|___/                 __________
+ |  _ \  __ _| |_ __ _  |  ___| | _____      __  \ \ \ \ \ \
+ | | | |/ _` | __/ _` | | |_  | |/ _ \ \ /\ / /   \ \ \ \ \ \
+ | |_| | (_| | || (_| | |  _| | | (_) \ V  V /    / / / / / /
+ |____/ \__,_|\__\__,_| |_|   |_|\___/ \_/\_/    /_/_/_/_/_/
+
+Spring Cloud Data Flow Server  (v2.5.0.BUILD-SNAPSHOT)
+
+2020-02-28 11:15:54.275  INFO 11384 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-02-28 11:15:55.346  INFO 11384 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-02-28 11:15:55.348  WARN 11384 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-cloud-dataflow-server/local": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-02-28 11:15:55.378  INFO 11384 --- [           main] o.s.c.d.s.s.DataFlowServerApplication    : The following profiles are active: local
+2020-02-28 11:15:57.172  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-28 11:15:57.173  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Map repositories in DEFAULT mode.
+2020-02-28 11:15:57.440  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 249ms. Found 1 Map repository interfaces.
+2020-02-28 11:15:58.630  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-28 11:15:58.651  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-28 11:15:58.685  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
+2020-02-28 11:15:59.290  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-28 11:15:59.291  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-28 11:15:59.476  INFO 11384 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 183ms. Found 5 JPA repository interfaces.
+2020-02-28 11:15:59.925  INFO 11384 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0c2f8d5-c6f7-3a62-b8fb-bb8ecc49d2fb
+2020-02-28 11:16:01.380  INFO 11384 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9393 (http)
+2020-02-28 11:16:01.411  INFO 11384 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9393"]
+2020-02-28 11:16:01.414  INFO 11384 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-28 11:16:01.422  INFO 11384 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-28 11:16:01.573  INFO 11384 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-28 11:16:02.939  INFO 11384 --- [           main] o.s.c.d.s.config.web.WebConfiguration    : Start Embedded H2
+2020-02-28 11:16:02.939  INFO 11384 --- [           main] o.s.c.d.s.config.web.WebConfiguration    : Starting H2 Server with URL: jdbc:h2:tcp://localhost:19092/mem:dataflow
+2020-02-28 11:16:06.172  INFO 11384 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-28 11:16:06.262  INFO 11384 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-28 11:16:06.354  INFO 11384 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-02-28 11:16:06.407  INFO 11384 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:tcp://localhost:19092/mem:dataflow (H2 1.4)
+2020-02-28 11:16:06.451  WARN 11384 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.200 is newer than this version of Flyway and support has not been tested.
+2020-02-28 11:16:06.596  INFO 11384 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.065s)
+2020-02-28 11:16:06.626  INFO 11384 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: "PUBLIC"."flyway_schema_history_dataflow"
+2020-02-28 11:16:06.671  INFO 11384 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2020-02-28 11:16:06.675  INFO 11384 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1 - INITIAL SETUP
+2020-02-28 11:16:06.767  INFO 11384 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC" (execution time 00:00.144s)
+2020-02-28 11:16:07.040  INFO 11384 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-28 11:16:07.248  INFO 11384 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-28 11:16:07.980  INFO 11384 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-28 11:16:08.238  INFO 11384 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-28 11:16:10.891  INFO 11384 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-28 11:16:10.908  INFO 11384 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-28 11:16:13.454  INFO 11384 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2020-02-28 11:16:13.546  INFO 11384 --- [           main] o.s.c.d.s.b.SimpleJobServiceFactoryBean  : No database type set, using meta data indicating: H2
+2020-02-28 11:16:13.758  WARN 11384 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-28 11:16:13.980  INFO 11384 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-28 11:16:20.108  INFO 11384 --- [           main] .s.c.DataFlowControllerAutoConfiguration : Skipper URI [http://localhost:7577/api]
+2020-02-28 11:16:20.387  INFO 11384 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9393"]
+2020-02-28 11:16:20.494  INFO 11384 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9393 (http) with context path ''
+2020-02-28 11:16:21.883  INFO 11384 --- [           main] o.s.c.d.s.s.DataFlowServerApplication    : Started DataFlowServerApplication in 33.302 seconds (JVM running for 35.025)
+2020-02-28 11:16:22.255  INFO 11384 --- [           main] .s.c.d.s.s.LauncherInitializationService : Added 'Local' platform account 'default' into Task Launcher repository.
+2020-02-28 11:16:56.375  INFO 11384 --- [io-9393-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-28 11:20:46.550  INFO 11384 --- [nio-9393-exec-3] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [maven://com.javatechie:courier-service:jar:0.0.1-SNAPSHOT] for application [courier-service]
+2020-02-28 11:20:48.922  INFO 11384 --- [nio-9393-exec-3] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [maven://com.javatechie:discount-service:jar:0.0.1-SNAPSHOT] for application [discount-service]
+2020-02-28 11:20:50.200  INFO 11384 --- [nio-9393-exec-3] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [maven://com.javatechie:product-service:jar:0.0.1-SNAPSHOT] for application [product-service]
+2020-02-28 11:20:51.619  INFO 11384 --- [nio-9393-exec-3] o.s.c.d.s.stream.SkipperStreamDeployer   : Deploying Stream log-data using skipper.
+2020-02-28 11:20:51.642  INFO 11384 --- [nio-9393-exec-3] o.s.c.d.s.stream.SkipperStreamDeployer   : Using platform 'default'
+2020-02-28 12:32:22.740  INFO 11384 --- [extShutdownHook] o.s.c.d.s.config.web.WebConfiguration    : Embedded H2 server stopped!
+2020-02-28 12:32:22.852  INFO 11384 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-28 12:32:22.858  INFO 11384 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-28 12:32:22.871  INFO 11384 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-28 12:32:22.876  INFO 11384 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+C:\Users\Documents\SpringCloud>java -jar spring-cloud-dataflow-server-2.5.0.BUILD-20200228.034106-40.jar
+2020-02-28 13:38:18.734  INFO 16620 --- [           main] o.s.c.d.a.l.ProfileApplicationListener   : Setting property 'spring.cloud.kubernetes.enabled' to false.
+2020-02-28 13:38:20.734  INFO 16620 --- [           main] o.s.c.d.a.l.ProfileApplicationListener   : Setting property 'spring.cloud.kubernetes.enabled' to false.
+  ____                              ____ _                __
+ / ___| _ __  _ __(_)_ __   __ _   / ___| | ___  _   _  __| |
+ \___ \| '_ \| '__| | '_ \ / _` | | |   | |/ _ \| | | |/ _` |
+  ___) | |_) | |  | | | | | (_| | | |___| | (_) | |_| | (_| |
+ |____/| .__/|_|  |_|_| |_|\__, |  \____|_|\___/ \__,_|\__,_|
+  ____ |_|    _          __|___/                 __________
+ |  _ \  __ _| |_ __ _  |  ___| | _____      __  \ \ \ \ \ \
+ | | | |/ _` | __/ _` | | |_  | |/ _ \ \ /\ / /   \ \ \ \ \ \
+ | |_| | (_| | || (_| | |  _| | | (_) \ V  V /    / / / / / /
+ |____/ \__,_|\__\__,_| |_|   |_|\___/ \_/\_/    /_/_/_/_/_/
+
+Spring Cloud Data Flow Server  (v2.5.0.BUILD-SNAPSHOT)
+
+2020-02-28 13:38:20.855  INFO 16620 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-02-28 13:38:21.951  INFO 16620 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-02-28 13:38:21.951  WARN 16620 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-cloud-dataflow-server/local": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-02-28 13:38:21.965  INFO 16620 --- [           main] o.s.c.d.s.s.DataFlowServerApplication    : The following profiles are active: local
+2020-02-28 13:38:23.940  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-28 13:38:23.941  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Map repositories in DEFAULT mode.
+2020-02-28 13:38:24.287  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 328ms. Found 1 Map repository interfaces.
+2020-02-28 13:38:25.003  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-28 13:38:25.015  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-28 13:38:25.032  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-02-28 13:38:25.336  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-28 13:38:25.336  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-28 13:38:25.444  INFO 16620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 5 JPA repository interfaces.
+2020-02-28 13:38:25.766  INFO 16620 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0c2f8d5-c6f7-3a62-b8fb-bb8ecc49d2fb
+2020-02-28 13:38:27.003  INFO 16620 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9393 (http)
+2020-02-28 13:38:27.025  INFO 16620 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9393"]
+2020-02-28 13:38:27.026  INFO 16620 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-28 13:38:27.029  INFO 16620 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-28 13:38:27.201  INFO 16620 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-28 13:38:28.234  INFO 16620 --- [           main] o.s.c.d.s.config.web.WebConfiguration    : Start Embedded H2
+2020-02-28 13:38:28.236  INFO 16620 --- [           main] o.s.c.d.s.config.web.WebConfiguration    : Starting H2 Server with URL: jdbc:h2:tcp://localhost:19092/mem:dataflow
+2020-02-28 13:38:31.341  INFO 16620 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-28 13:38:31.414  INFO 16620 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-28 13:38:31.491  INFO 16620 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-02-28 13:38:31.515  INFO 16620 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:tcp://localhost:19092/mem:dataflow (H2 1.4)
+2020-02-28 13:38:31.561  WARN 16620 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.200 is newer than this version of Flyway and support has not been tested.
+2020-02-28 13:38:31.694  INFO 16620 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.056s)
+2020-02-28 13:38:31.720  INFO 16620 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: "PUBLIC"."flyway_schema_history_dataflow"
+2020-02-28 13:38:31.761  INFO 16620 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2020-02-28 13:38:31.767  INFO 16620 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1 - INITIAL SETUP
+2020-02-28 13:38:31.853  INFO 16620 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC" (execution time 00:00.137s)
+2020-02-28 13:38:32.108  INFO 16620 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-28 13:38:32.283  INFO 16620 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-28 13:38:32.715  INFO 16620 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-28 13:38:33.319  INFO 16620 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-28 13:38:35.476  INFO 16620 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-28 13:38:35.495  INFO 16620 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-28 13:38:37.396  INFO 16620 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2020-02-28 13:38:37.506  INFO 16620 --- [           main] o.s.c.d.s.b.SimpleJobServiceFactoryBean  : No database type set, using meta data indicating: H2
+2020-02-28 13:38:37.711  WARN 16620 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-28 13:38:37.913  INFO 16620 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-28 13:38:40.739  INFO 16620 --- [           main] .s.c.DataFlowControllerAutoConfiguration : Skipper URI [http://localhost:7577/api]
+2020-02-28 13:38:41.173  INFO 16620 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9393"]
+2020-02-28 13:38:41.266  INFO 16620 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9393 (http) with context path ''
+2020-02-28 13:38:42.523  INFO 16620 --- [           main] o.s.c.d.s.s.DataFlowServerApplication    : Started DataFlowServerApplication in 28.151 seconds (JVM running for 29.619)
+2020-02-28 13:38:42.770  INFO 16620 --- [           main] .s.c.d.s.s.LauncherInitializationService : Added 'Local' platform account 'default' into Task Launcher repository.
+2020-02-28 13:39:12.802  INFO 16620 --- [nio-9393-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-28 13:42:51.956  INFO 16620 --- [nio-9393-exec-4] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [maven://com.javatechie:courier-service:jar:0.0.1-SNAPSHOT] for application [courier-service]
+2020-02-28 13:42:52.531  INFO 16620 --- [nio-9393-exec-4] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [maven://com.javatechie:discount-service:jar:0.0.1-SNAPSHOT] for application [discount-service]
+2020-02-28 13:42:52.761  INFO 16620 --- [nio-9393-exec-4] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [maven://com.javatechie:product-service:jar:0.0.1-SNAPSHOT] for application [product-service]
+2020-02-28 13:42:53.045  INFO 16620 --- [nio-9393-exec-4] o.s.c.d.s.stream.SkipperStreamDeployer   : Deploying Stream log-data using skipper.
+2020-02-28 13:42:53.081  INFO 16620 --- [nio-9393-exec-4] o.s.c.d.s.stream.SkipperStreamDeployer   : Using platform 'default'
