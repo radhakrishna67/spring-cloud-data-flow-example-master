@@ -11,7 +11,7 @@ Spring Cloud Data Flow Example with Kafka-binder
 ###### 3) Strat Kafka server 
 > kafka-server-start.bat C:\Users\Documents\Office\kafka\config\server.properties
 
-###### 4) Download Spring Cloud Skipper Server jar [Download] (https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-skipper-server/2.4.0.BUILD-SNAPSHOT/spring-cloud-skipper-server-2.4.0.BUILD-20200216.134721-5.jar).
+###### 4) Download Spring Cloud Skipper Server jar [Download](https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-skipper-server/2.4.0.BUILD-SNAPSHOT/spring-cloud-skipper-server-2.4.0.BUILD-20200216.134721-5.jar).
 
 ###### 5) Start Spring Cloud Skipper Server
 > java -jar spring-cloud-skipper-server-2.4.0.BUILD-20200216.134721-5.jar
